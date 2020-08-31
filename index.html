@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="星座和生肖計算機" />
+        <meta property="og:description" content="根據出生年月日來計算星座和生肖，星座依據天體運行及數據將星象劃出十二個區隔並分配到相應的月份，生肖則是以十二種動物代表年。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/calculator.css" />
+        <title>星座和生肖計算機</title>
+    </head>
+    <body>
+        <h2>找出你的星座和生肖</h2>
+        <h3>請輸入你的出生年月日</h3>
+        <div class="container">
+            <div class="row text-center">
+                    <div class="col-4 col-lg-4"><input class="col-12" type="text" id="year" required placeholder="年（yyyy）" /></div>
+                    <div class="col-4 col-lg-4"><input class="col-12" type="text" id="month" required placeholder="月（mm）" /></div>
+                    <div class="col-4 col-lg-4"><input class="col-12" type="text" id="day" required placeholder="日（dd）" /></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <button class="col-4 btn btn-link" type="button" id="submit" onClick="birthDate()"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+            <br />
+            <div class="row text-center">
+                    <h4 class="col-12 col-lg-12 rwd-break" id="display">你的星座將旋轉到 12 點鐘的位置，你的生肖將顯示在方向盤的中間</h4>
+            </div>
+            <div>
+                <img id="horoscope" src="images/horoscope.gif" />
+                <img id="zodiac" src="images/question-mark.png" alt="星座" />
+            </div>
+        </div>
+        <script src="js/calculator.js" defer></script>
+    </body>
+</html>

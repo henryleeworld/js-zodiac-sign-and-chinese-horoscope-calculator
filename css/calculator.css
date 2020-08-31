@@ -1,0 +1,105 @@
+body {
+    margin-top: 5%;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+p {
+    color: dimgrey;
+    margin-bottom: 1%;
+    font-family: Courier;
+    font-weight: bold;
+}
+
+#year,
+#month,
+#day {
+    border: #404040;
+    color: dimgray;
+    background-color: pink;
+    min-height: 50px;
+    font-family: Courier;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input[placeholder] {
+    text-align: center;
+    font-family: Courier;
+    font-weight: bold;
+    color: dimgray;
+}
+
+#display {
+    border: #404040;
+    color: dimgray;
+    background-color: #b3d9ff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: Courier;
+    font-weight: bold;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media screen and (max-width:480px) {
+    #display.rwd-break {
+        display: block;
+    }
+}
+
+#submit {
+    border: #404040;
+    color: #fff;
+    margin-top: 3%;
+    text-align: center;
+    background-color: silver;
+    font-family: Courier;
+    font-weight: bold;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: slategrey;
+}
+
+input {}
+
+div {
+    position: relative;
+    text-align: center;
+}
+
+#horoscope {
+    -webkit-transform: rotate();
+    transform: rotate();
+    -ms-transform: rotate();
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#zodiac {
+    position: absolute;
+    z-index: 2;
+    width: 10%;
+    top: 48%;
+    left: 45%;
+}
